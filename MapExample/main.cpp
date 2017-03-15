@@ -32,7 +32,7 @@ int main()
 		case 3: GoEast(map); break;
 		case 4: GoSouth(map); break;
 		case 5: GoWest(map); break;
-			//case 6: PathToHome(map) break;
+		//case 6: PathToHome(map) break;
 		default: cout << "Enter a valid option"; break;
 		}
 		system("pause");
@@ -60,6 +60,7 @@ void GoNorth(Map &map)
 	}
 	newLocation->South = map.CurrentLocation;
 	map.Move(newLocation);
+	
 	return;
 }
 

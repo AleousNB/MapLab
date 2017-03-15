@@ -14,11 +14,12 @@ Map::~Map()
 
 void Map::Move(Location *newLocation) 
 {	
-	_locationsVisited.push(newLocation);
+	Path.push(newLocation);
 	CurrentLocation = newLocation;
 }
 
 std::string Map::GetPathBackToHome()
 {
-	return "TODO: Implement this";
+	//TODO: Implement this
+	return Path;
 }
